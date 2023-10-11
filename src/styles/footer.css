@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  padding: 5px 60px;
+  justify-content: space-between;
+}
+.foot-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.foot-logo span {
+  display: flex;
+  gap: 10px;
+}
