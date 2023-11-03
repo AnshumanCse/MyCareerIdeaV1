@@ -1,6 +1,7 @@
 import "../../styles/footer.css";
 import Image from "next/image";
 import logo from "../../../public/imgs/logo/MycareerIdea.jpeg";
+// import {logo} from "../../public/imgs/logo/MycareerIdea.jpeg"
 import { GrLocation } from "react-icons/gr";
 
 const Footer = () => {

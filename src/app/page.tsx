@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import StudyDomain from "./components/StudyDomain";
+import StudentReview from "./components/StudentReview";
 // import Cards from "./components/Cards";
 
 const Page = () => {
@@ -13,6 +14,7 @@ const Page = () => {
       <Header />
       <Home />
       <StudyDomain />
+      <StudentReview />
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --box-bg-color: #ffff;
   --text-color: #4f5e79ff;
   --box-color: #3985a6;
@@ -33,7 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  /* width: 100%; */
+  
 }
 .search input {
   padding: 15px;
@@ -106,7 +106,136 @@ button:hover {
       ),
       url("./home-2.webp");
   }
+} */
+
+:root {
+  --box-bg-color: #ffff;
+  --text-color: #4f5e79ff;
+  --box-color: #3985a6;
+  --hover-color: #00628c;
+  --bg-color: #f7f7f7;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  color: var(--box-bg-color);
+  background-color: #828282;
+  padding: 70px 60px;
+  animation: image 7s infinite alternate;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.search input {
+  padding: 15px;
+  outline: none;
+  font-size: large;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ffffff;
+}
+
+.btns button {
+  padding: 10px;
+  background-color: var(--box-color);
+  outline: none;
+  border: 1px solid #ffffff;
+  color: var(--box-bg-color);
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search button {
+  padding: 3px;
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: var(--box-color);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+@keyframes image {
+  0% {
+    background-image: linear-gradient(
+        to top,
+        rgba(147, 147, 147, 0.52),
+        rgba(69, 69, 69, 0.73)
+      ),
+      url("./bg-home-3.webp");
+  }
+  30% {
+    background-image: linear-gradient(
+        to top,
+        rgba(147, 147, 147, 0.52),
+        rgba(69, 69, 69, 0.73)
+      ),
+      url("./bg-home.webp");
+  }
+
+  50% {
+    background-image: linear-gradient(
+        to top,
+        rgba(147, 147, 147, 0.52),
+        rgba(69, 69, 69, 0.73)
+      ),
+      url("./home-2.webp");
+  }
+  80% {
+    background-image: linear-gradient(
+        to top,
+        rgba(147, 147, 147, 0.52),
+        rgba(69, 69, 69, 0.73)
+      ),
+      url("./bg-home-2.webp");
+  }
+  100% {
+    background-image: linear-gradient(
+        to top,
+        rgba(147, 147, 147, 0.52),
+        rgba(69, 69, 69, 0.73)
+      ),
+      url("./home-2.webp");
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 40px 20px;
+  }
+
+  .home-container {
+    padding: 0 20px;
+  }
+}
+
+
+
+
 /* ####################### Main page CSS END ######################## */
 
 /* ========================= Study Domain Page Css Start =========================== */
@@ -151,4 +280,93 @@ button:hover {
 }
 .card span {
   font-weight: 700;
+}
+
+/* ========================= Student review css =========================== */
+.banner_with_background {
+  background: linear-gradient(45deg, #4374b9, #ee9942);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.col-md-7 {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+}
+
+.col-md-4 {
+  flex: 0 0 50%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+}
+
+.counter {
+  font-size: 36px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.counter:hover {
+  color: #fff;
+}
+
+.stats-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.image-column {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .hidden-xs {
+    display: block;
+  }
+
+  .col-xs-6 {
+    flex: 0 0 50%;
+  }
 }
