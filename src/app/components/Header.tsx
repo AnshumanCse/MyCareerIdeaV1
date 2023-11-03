@@ -1,8 +1,10 @@
 import { BsChevronDown } from "react-icons/bs";
-import { RiMenuFoldLine } from "react-icons/ri";
+
 import "../../styles/navbar.css";
 import Image from "next/image";
 import logo from "../../../public/imgs/logo/MycareerIdea.jpeg";
+import MobileMenu from "./Togglebtn";
+
 const Header = () => {
   return (
     <div className="navbar">
@@ -23,7 +25,7 @@ const Header = () => {
         <li>About Us</li>
       </ul>
       <div className="menu">
-        <RiMenuFoldLine size="30px" />
+        <MobileMenu />
       </div>
     </div>
   );
